@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './Navigation';
+import './css/bootstrap.min.css';
+import './css/App.css';
+import AboutUs from './AboutUs';
+import Services from './Services';
+import Pricing from './Pricing';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation></Navigation>
+      <div className='Marg-cent'>
+        <div id = "home">
+          <AboutUs></AboutUs>
+        </div>
+        <br></br>
+        <div id = "services">
+          <Services></Services>
+        </div>
+        <div id="pricing">
+          <Pricing></Pricing>
+        </div>
+      </div>
+      <footer>Copyright © Tonsberg 2019.</footer>
     </div>
   );
 }

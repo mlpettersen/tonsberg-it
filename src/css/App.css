@@ -7,16 +7,29 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000000
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.Marg-cent {
+  align-self: center;
+  padding: 5% 5% 5%;
+}
+
+.about-card {
+  background-color: rgb(5, 151, 151);
+}
+
+.dark-card {
+  background-color: rgb(26, 32, 32);
+  color:white;
 }
